@@ -12,7 +12,7 @@ const App = () => {
   return (
     <article className="flex-container">
       <main className="container">
-        <FormHeader>Sign In</FormHeader>
+        <FormHeader><h2>Sign In</h2></FormHeader>
         <LoginForm/>
         <FormFooter/>
       </main>
