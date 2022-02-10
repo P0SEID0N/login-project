@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import LoginForm from './components/loginForm/loginForm';
+import FormHeader from './components/formHeader/formHeader';
+import FormFooter from './components/formFooter/formFooter';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <article className="flex-container">
+      <section className="container">
+        <FormHeader>Sign In</FormHeader>
+        <LoginForm/>
+        <FormFooter/>
+      </section>
+    </article>
   );
 }
 

@@ -1,0 +1,17 @@
+.FormFooter {
+    display: flex;
+    margin:15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.FooterElement {
+    margin:5px;
+}
+
+.FooterElement a {
+    font-weight: bold;
+    color: black;
+}
