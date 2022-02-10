@@ -4,14 +4,18 @@ import LoginForm from './components/loginForm/loginForm';
 import FormHeader from './components/formHeader/formHeader';
 import FormFooter from './components/formFooter/formFooter';
 
+/* 
+* Component: App
+* This is the root component of our application, it is structured by separating the form into three elements, header main and footer.
+*/
 const App = () => {
   return (
     <article className="flex-container">
-      <section className="container">
+      <main className="container">
         <FormHeader>Sign In</FormHeader>
         <LoginForm/>
         <FormFooter/>
-      </section>
+      </main>
     </article>
   );
 }

@@ -8,6 +8,9 @@ import useFormHandler from '../../hooks/formHanlder';
 
 import './loginForm.css';
 
+/*
+* Yup validation logic, allows Formik validations to be declared in plain text, with error message customization
+*/
 const signup = Yup.object().shape({
     email: Yup.string()
         .email()
@@ -18,7 +21,8 @@ const signup = Yup.object().shape({
       .required('A password is required'),
   });
 
-/* Component: Login Form
+/* 
+* Component: LoginForm
 * Contains all of the login form HTML and functionality logic. This form takes use of Formik to handle form state, errors and validation.
 */
 const LoginForm = () => {
@@ -26,7 +30,6 @@ const LoginForm = () => {
     //UseFormHandler is a hook that handles all the submission logic and handles initial values. Extract them here. 
     const { initialValues, handleSubmit } = useFormHandler();
 
-//Formik is lightweight, in using it for our form state, validation and excetera we can avoid a lot of heavier calls that might be present in other form related libraries.
   return (
     <Formik
     onSubmit={handleSubmit}
