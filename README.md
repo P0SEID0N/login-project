@@ -29,6 +29,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This application is deployed to Azure: https://orange-meadow-085f7450f.1.azurestaticapps.net/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When installing you will need to run NPM i to import all of the external libraries used. 
+
+Please let me know if there are any issues at all!
