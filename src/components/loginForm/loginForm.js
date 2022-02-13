@@ -43,6 +43,7 @@ const LoginForm = () => {
             <Field
               name="email"
               type="email"
+              id="email"
               placeholder="Email"
               aria-required="true"
               aria-invalid={errors.email && touched.email ? 'true' : null}
@@ -57,6 +58,7 @@ const LoginForm = () => {
             <Field
               name="password"
               type="password"
+              id="password"
               placeholder="Password"
               aria-required="true"
               aria-invalid={errors.password && touched.password ? 'true' : null}
@@ -67,7 +69,7 @@ const LoginForm = () => {
            ) : null}
         </label>
         <label className="FormInputCheckbox">
-            <Field type="checkbox" name="rememberme" /> Remember Me
+            <Field type="checkbox" name="rememberme" id="rememberme" /> Remember Me
           </label>
         <button
           type="submit"
